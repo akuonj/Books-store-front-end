@@ -1,0 +1,152 @@
+/* Resetting default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting a base font size for better readability */
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the navigation bar */
+.nav_bar {
+    background-color: white;
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between; /* Horizontal alignment */
+    padding: 10px 20px; /* Equal padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+/* Styles for navigation links */
+.nav_bar a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px; /* Adjust spacing between links */
+}
+
+.nav_bar a:hover {
+    color: red;
+}
+
+/* Styles for the logo */
+.logo img {
+    height: 125px; /* Adjust height as needed */
+    width: 160px; /* Adjust width as needed */
+    margin-right: 20px; /* Adjust spacing between logo and links */
+}
+
+.comments {
+    text-align: center; /* Center align the content */
+    margin: 20px auto; /* Add some margin around the section and center it horizontally */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    width: 80%; /* Set the width of the div */
+    max-width: 600px; /* Limit the maximum width of the div */
+    height: auto; /* Let the height adjust dynamically based on content */
+}
+
+.comments h2 {
+    margin-bottom: 10px; /* Add spacing below the heading */
+}
+
+.comments p {
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+    line-height: 1.5; /* Set the line height for better readability */
+}
+
+.pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay, .positioned {
+    width: calc(33.33% - 10px); /* Set width for each image to occupy one-third of the container with margin */
+    max-width: calc(33.33% - 10px); /* Ensure images don't exceed one-third of the container's width with margin */
+    margin: 5px; /* Adjust margin between images */
+}
+
+.footer {
+    background-color: #333; /* Set background color for the footer */
+    color: #fff; /* Set text color for links */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center align text */
+}
+
+.footer-links {
+    margin-bottom: 15px; /* Add margin below the links */
+}
+
+.footer-links a {
+    color: #fff; /* Set link text color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add margin between links */
+    display: block; /* Ensure links stack vertically on small screens */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.social-media {
+    margin-top: 15px; /* Add margin above social media icons */
+}
+
+.social-media a {
+    display: inline-block; /* Make icons display inline */
+    margin: 0 10px; /* Add margin between icons */
+}
+
+.social-media img {
+    width: 30px; /* Set width for social media icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer .copyright {
+    font-size: 14px; /* Adjust font size */
+    margin-top: 20px; /* Add margin above the copyright notice */
+}
+
+/* Media query for smaller screens like mobile devices */
+@media (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    
+    .nav_bar a {
+        margin: 5px 0; /* Adjust margin for spacing */
+    }
+
+    .logo img {
+        height: 50px; /* Adjust logo height for smaller screens */
+        width: 50px; /* Adjust logo width for smaller screens */
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
+    
+    .comments {
+        width: 90%; /* Adjust width for small devices */
+        max-width: none; /* Remove the maximum width constraint */
+    }
+    
+    .overlay, .positioned {
+        width: 100%; /* Set width to fill the container on smaller screens */
+        max-width: 100%; /* Ensure images don't exceed container's width on smaller screens */
+    }
+    
+    .footer-links a {
+        margin: 5px; /* Adjust margin between links for smaller screens */
+    }
+
+    .social-media {
+        margin-top: 10px; /* Adjust margin above social media icons for smaller screens */
+    }
+}
+
